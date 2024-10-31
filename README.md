@@ -2,6 +2,10 @@
 
 O BMO é uma aplicação simples desenvolvida para otimizar o processo de busca de preços nas lojas da nossa rede de farmácias. A aplicação permite que o usuário leia o código de barras de um produto e visualize seu preço, nome e código. Enquanto isso, uma propaganda em vídeo é exibida ao fundo em loop, criando uma experiência informativa e atrativa para o cliente.
 
+## Colaboradores
+
+Este projeto foi desenvolvido por [Yohan Lopes](https://github.com/YoYolops) e mim.
+
 ## Objetivo
 
 Facilitar a consulta de preços diretamente no ponto de venda, enquanto reforça a comunicação visual com o cliente por meio de propagandas em vídeo.
