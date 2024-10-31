@@ -1,0 +1,32 @@
+version: '3'
+
+networks:
+  frontend-network:
+    driver: bridge
+  backend-network:
+    driver: bridge
+
+
+services:
+  frontend:
+    build: 
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - "3030:3000"
+    depends_on:
+      - bmo_api_1
+    networks:
+      - frontend-network
+      - backend-network
+
+  bmo_api_1:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    ports:
+      - "3031:4000"
+    environment:
+      - NODE_ENV=prod
+    networks:
+      - backend-network

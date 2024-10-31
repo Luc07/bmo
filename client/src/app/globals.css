@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.modal_shadow {
+    box-shadow: rgba(196, 81, 31, 0.3) 0px 19px 38px, rgba(196, 81, 31, 0.22) 0px 15px 12px;
+}

@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "esModuleInterop": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "target": "ES2022",
+        "module": "CommonJS",
+        "outDir": "dist",
+        "baseUrl": ".",
+        "paths": {
+            "@types": ["src/@types/index"],
+            "@controllers/*": ["src/controllers/*"],
+            "@DTOs": ["src/DTOs/index"],
+            "@lib/*": ["src/lib/*"],
+            "@middlewares/*": ["src/middlewares/*"],
+            "@router/*": ["src/router/*"],
+            "@services/*": ["src/services/*"],
+            "@database/*": ["src/database/*"],
+            "@/*": ["src/*"]
+        }
+    },
+    "exclude": ["node_modules"],
+    "include": ["src"]
+}
